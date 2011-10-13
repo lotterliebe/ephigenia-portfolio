@@ -1,3 +1,7 @@
+title: WeSC (WeAretheSuperlativeConspiracy)
+author: Marcel Eichner
+date: 2011-10-13
+
 # WeSC
 
 <img src="<?= $Router->root(); ?>/images/work/wesc/20111011_wesc_startseite.jpg">

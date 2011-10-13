@@ -8,7 +8,7 @@ use
 $router = Router::getInstance();
 $router->addRoutes(array(
 	
-	'page' => new Route('/(?<path>.*)?', array(
+	'page' => new Route('/(?P<path>.*)?', array(
 		'controller' => 'lola\controller\PageController',
 		'action' => 'show',
 		'path' => 'index',

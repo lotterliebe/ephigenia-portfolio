@@ -7,3 +7,6 @@
 [submodule "lib/php-markdown"]
 	path = lib/php-markdown
 	url = https://github.com/wolfie/php-markdown.git
+[submodule "lib/php-yaml"]
+	path = lib/php-yaml
+	url = https://github.com/fabpot/yaml.git
