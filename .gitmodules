@@ -1,0 +1,9 @@
+[submodule "lib/ephFrame"]
+	path = lib/ephFrame
+	url = git@github.com:Ephigenia/ephFrame.git
+[submodule "lib/phing-tasks"]
+	path = lib/phing-tasks
+	url = git@github.com:Ephigenia/phing-tasks.git
+[submodule "lib/php-markdown"]
+	path = lib/php-markdown
+	url = https://github.com/wolfie/php-markdown.git

@@ -1,0 +1,9 @@
+# Main webroot htaccess file for ephFrame applications
+# if you experience problems successive delete some of the parts
+# ----------------------------------------------------------------------------
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-s
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule	^(.*)$ index.php [QSA,L]
