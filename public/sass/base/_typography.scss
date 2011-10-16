@@ -1,0 +1,51 @@
+@import "compass/typography/vertical_rhythm";
+
+@include establish-baseline();
+
+// basic text fonts
+$text-color: #000 !default;
+$base-font: "Arial" !default;
+$base-font-weight: normal !default;
+
+html, input, select {
+	font-family: $base-font;
+	font-weight: $base-font-weight;
+	color: $text-color;
+}
+sup {
+	vertical-align: super;
+	font-size: 85%;
+}
+
+
+// headline default config
+$headline-font: $base-font !default;
+$headline-font-weight: normal !default;
+$headline-color: $text-color !default;
+
+#{headings()} {
+	color: $headline-color;
+	font-family: $headline-font;
+	font-weight: $headline-font-weight;
+	& > small {
+		font-weight: normal;
+		font-size: 65%;
+	}
+	& > em {
+		font-style: italic;
+	}
+}
+
+
+// monospace font
+$monospace-font: monospace, sans-serif !default;
+
+pre, code, kbd, samp {
+	font-family: $monospace-font;
+}
+pre {
+	white-space: pre;
+	white-space: pre-wrap;
+	white-space: pre-line;
+	word-wrap: break-word;
+}

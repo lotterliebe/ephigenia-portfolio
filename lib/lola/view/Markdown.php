@@ -18,6 +18,7 @@ class Markdown extends \ephFrame\view\Renderer
 		}
 		// run PHP Compiler first
 		$PHPRenderer = new Renderer();
+		$PHPRenderer->view = $this->view;
 		$PHPRenderer->extension = $this->extension;
 		$rendered = $PHPRenderer->render($filename, $data);
 		$parser = new \MarkdownExtra_Parser();
@@ -38,7 +39,9 @@ class Markdown extends \ephFrame\view\Renderer
 		$contents = file_get_contents($filename);
 		$metadata = substr($contents, 0, strpos($contents, "\n\n"));
 		// parse meta data
-		require LIB_DIR.'/php-yaml/lib/sfYaml.php';
+		if (!class_exists('sfYaml')) {
+			require LIB_DIR.'/php-yaml/lib/sfYaml.php';
+		}
 		$yaml = new \sfYaml();
 		$data = $yaml->load($metadata);
 		return $data ?: array();

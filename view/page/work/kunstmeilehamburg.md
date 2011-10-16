@@ -1,4 +1,4 @@
-title: WeSC
+title: Kunstmeile Hamburg
 author: Marcel Eichner
 date: 2011-10-13
 

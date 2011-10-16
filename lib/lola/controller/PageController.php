@@ -20,6 +20,9 @@ class PageController extends \ephFrame\core\Controller
 				case 'layout':
 					$this->view->layout = $value;
 					break;
+				default:
+					$this->view[$key] = $value;
+					break;
 			}
 		}
 	}

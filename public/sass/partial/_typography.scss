@@ -1,0 +1,14 @@
+h1 {
+	@include adjust-font-size-to($base-font-size * 3);
+}
+h2 {
+	@include adjust-font-size-to($base-font-size * 2);
+}
+
+#app {
+	article {
+		p, ul {
+			@include trailer(1);
+		}
+	}
+}
