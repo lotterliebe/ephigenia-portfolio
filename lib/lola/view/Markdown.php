@@ -21,7 +21,26 @@ class Markdown extends \ephFrame\view\Renderer
 		$PHPRenderer->extension = $this->extension;
 		$rendered = $PHPRenderer->render($filename, $data);
 		$parser = new \MarkdownExtra_Parser();
-		$rendered = $parser->transform(parent::render($filename, $data));
+		$content = parent::render($filename, $data);
+		// strip metadata
+		$metadataEnd = strpos($content, "\n\n");
+		if ($metadataEnd > 0) {
+			$content = substr($content, $metadataEnd);
+		}
+		// render markdown
+		$rendered = $parser->transform($content);
 		return $rendered;
+	}
+	
+	public function metadata($filename)
+	{
+		$filename = APP_ROOT.DIRECTORY_SEPARATOR.'view/page/'.$this->filename($filename.'.html');
+		$contents = file_get_contents($filename);
+		$metadata = substr($contents, 0, strpos($contents, "\n\n"));
+		// parse meta data
+		require LIB_DIR.'/php-yaml/lib/sfYaml.php';
+		$yaml = new \sfYaml();
+		$data = $yaml->load($metadata);
+		return $data ?: array();
 	}
 }

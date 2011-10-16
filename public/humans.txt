@@ -1,0 +1,20 @@
+/* TEAM */
+	Software Engineer: Marcel Eichner
+	Contact: love [at] ephigenia.de
+	Site: http://www.marceleichner.de
+	Twitter: ephigenia
+	Location: Berlin, Germany
+	
+	Copy Writing: Sarah Curth
+	Contact: sara.curth [at] gmail.com
+	Site: http://www.lotterliebe.de
+	Twitter: lotterliebe
+	Location: Berlin, Germany
+
+/* THANKS */
+
+/* SITE */
+	Last update: 2011-10-16
+	Standards: HTML5, CSS3
+	Components: Modernizr, jQuery, etc.
+	Software: ephFrame 0.3, PHP-Markdown
