@@ -2,49 +2,31 @@
 
 html {
 	@include background($application-background-color);
+	min-height: 100%;
 }
 
 #app {
-	padding: 2.5%;
-	article {
-		@include column-count(2);
-		@include column-gap(40px);
-		img {
-			width: 100%;
-		}
-		@media only screen and (max-width: 540px) {
-			@include column-count(1);
-		}
-	}
+	max-width: pxToEm(960px);
+	min-height: 100%;
 }
-
-header {
-	text-align: center;
+#sidebar {
 	h1 {
-		padding: 0 1em;
-		display: inline-block;
-		border-bottom: 1px solid lighten($text-color, 50);
+		border-left: 10px double #fff400;
+		border-right: 1px solid lighten($text-color, 60);
+		padding-left: 0.25em;
 	}
-	@include trailer(1);
+	float: left;
+	padding: pxToEm(40px) pxToEm(20px) pxToEm(40px) pxToEm(40px);
+	width: pxToEm(240px);
+	display: table;
 }
-
-header, footer {
-	nav {
-		text-align: center;
-		margin: 0 auto;
-		ul li {
-			line-height: 2em;
-			display: inline;
-			&:after {
-				content: ' •';
-			}
-			&:last-child:after {
-				content: '';
-			}
-		}
+#main {
+	margin-top: pxToEm(40px);
+	display: table;
+	clear: none;
+	float: right;
+	max-width: pxToEm(640px);
+	img {
+		width: 100%;
 	}
-}
-
-footer {
-	border-top: 1px solid lighten($text-color, 50);
 }

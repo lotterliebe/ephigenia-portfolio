@@ -10,30 +10,28 @@
 </head>
 <body>
 	<div id="app">
-		<header class="banner" role="banner">
-			<h1>Marcel Eichner</h1>
-			<nav>
+		<sidebar id="sidebar" role="sidebar">
+			<h1 class="logo">Marcel Eichner // Ephigenia</h1>
+			<nav class="main-menu">
 				<ul>
-					<li><a href="<?= $Router->page(); ?>">Blog</a></li>
+					<li><a href="http://blog.marceleichner.de">Blog</a></li>
 					<li><a href="<?= $Router->page(); ?>">Code</a></li>
 					<li><a href="<?= $Router->page(); ?>">Illustration</a></li>
 					<li><a href="<?= $Router->page(); ?>">About</a></li>
 				</ul>
 			</nav>
-		</header>
-		<article>
-			<?= $content ?>
-		</article>
-		<footer>
-			<nav>
-				<ul>
-					<li><a href="http://twitter.com/ephigenia" class="me external">Twitter</a></li>
-					<li><a href="<?= $Router->page(); ?>">About</a></li>
-					<li><a href="<?= $Router->page(); ?>">Contact</a></li>
-					<li><a href="<?= $Router->page(); ?>">Imprint</a></li>
-				</ul>
-			</nav>
-		</footer>
+			<p>
+				Marcel Eichner wurde 1983 in Berlin geboren. Er lebt in Berlin als
+				Programmierer, Webdesigner, Film-Blogger und Illustrator. Studium des
+				Kommunikationsdesigns an der FHTW Berlin. Selbständiger PHP-Programmierer.
+				Arbeitete für/an verschiedene Web 2.0-Unternehmen und Open Source Projekten.
+			</p>
+		</sidebar>
+		<div id="main" role="main">
+			<article>
+				<?= $content ?>
+			</article>
+		</div>
 	</div>
 </body>
 </html>

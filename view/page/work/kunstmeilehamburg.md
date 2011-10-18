@@ -2,11 +2,11 @@ title: Kunstmeile Hamburg
 author: Marcel Eichner
 date: 2011-10-13
 tags:
-	- PHP
-	- ephFrame
-	- Frontend
-	- XHTML
-	- CSS
+  - PHP
+  - ephFrame
+  - Frontend
+  - XHTML
+  - CSS
 
 # <?= $pageTitle ?>
 

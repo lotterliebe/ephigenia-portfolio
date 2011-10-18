@@ -2,13 +2,13 @@ title: Berliner Gazette
 author: Marcel Eichner
 date: 2011-10-13
 tags:
-	- Wordpress
-	- PHP
-	- Frontend
-	- CSS
-	- SASS
-	- Compass
-	- HTML
+  - Wordpress
+  - PHP
+  - Frontend
+  - CSS
+  - SASS
+  - Compass
+  - HTML
 
 # <?= $pageTitle ?>
 

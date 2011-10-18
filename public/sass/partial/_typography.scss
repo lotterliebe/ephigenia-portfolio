@@ -1,14 +1,14 @@
+@import "compass/layout/grid-background";
+
 h1 {
-	@include adjust-font-size-to($base-font-size * 3);
+	@include adjust-font-size-to($base-font-size * 3, 2);
+	@include trailer(0.30);
 }
 h2 {
-	@include adjust-font-size-to($base-font-size * 2);
+	@include adjust-font-size-to($base-font-size * 2, 2);
+	@include trailer(0.315);
 }
 
-#app {
-	article {
-		p, ul {
-			@include trailer(1);
-		}
-	}
+p, ul {
+	@include trailer(1);
 }
