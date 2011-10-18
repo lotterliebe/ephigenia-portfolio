@@ -1,6 +1,10 @@
 title: WeSC
 author: Marcel Eichner
 date: 2011-10-13
+tags: 
+	- PHP
+	- CakePHP
+	- CMS
 
 # <?= $pageTitle ?>
 

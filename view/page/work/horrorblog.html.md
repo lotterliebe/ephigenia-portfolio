@@ -1,6 +1,15 @@
 title: Horrorblog
 author: Marcel Eichner
 date: 2011-10-13
+tags:
+  - nginx
+  - PHP 5.3
+  - ephFrame
+  - Harrison
+  - HTML5
+  - CSS3
+  - SASS
+  - Compass
 
 # <?= $pageTitle ?>
 
