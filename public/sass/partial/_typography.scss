@@ -1,14 +1,30 @@
 @import "compass/layout/grid-background";
 
+#{headings()} {
+	text-shadow:
+		invert($headline-color) 1px 1px 0px,
+		lighten($headline-color, 80) 1px 1px 2px
+	;
+}
 h1 {
 	@include adjust-font-size-to($base-font-size * 3, 2);
 	@include trailer(0.30);
 }
 h2 {
 	@include adjust-font-size-to($base-font-size * 2, 2);
-	@include trailer(0.315);
 }
 
-p, ul {
+p, ul, ol, dl {
 	@include trailer(1);
+}
+
+#main {
+	ul {
+		padding-left: 1em;
+		list-style-type: disc;
+	}
+	ol {
+		padding-left: 1.5em;
+		list-style-type: decimal;
+	}
 }

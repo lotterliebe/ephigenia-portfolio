@@ -1,15 +1,15 @@
 title: WeSC
 author: Marcel Eichner
 date: 2011-10-13
-tags: 
+technologies: 
   - PHP
   - CakePHP
-  - CMS
 
 # <?= $pageTitle ?>
 
 * [http://wesc.com](http://wesc.com)
 * Juni 2009 – heute
+* <?= implode(', ', $technologies); ?>  
 
 Für das weltweit bekannte Streetstyle- und Skate-Mode-Label WeSC (We are the
 Superlative Conspiracy) aus Schweden programmierte ich für und mit Uli

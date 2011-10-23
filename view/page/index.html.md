@@ -1,11 +1,6 @@
 # headline test
 
-## Code
 
-* [WeSC](<?= $Router->page(array('path' => 'work/wesc')); ?>)
-* [Sootfreecities.eu](<?= $Router->page(array('path' => 'work/sootfreecities')); ?>)
-* [Horrorblog](<?= $Router->page(array('path' => 'work/horrorblog')); ?>)
-* [Escpaio](<?= $Router->page(array('path' => 'work/escapio')); ?>)
 
 ## Illustration
 
