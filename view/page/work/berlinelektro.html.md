@@ -1,20 +1,17 @@
-title: Kunstmeile Hamburg
+title: Berlin Elektro
 author: Marcel Eichner
 date: 2011-10-13
-technologies:
-  - PHP
-  - ephFrame
-  - XHTML
+technologies: 
+  - HTML
   - CSS
-  - Google Maps
-  - CMS
-  - Javascript
+  - SASS
+  - Compass
 
 # <?= $pageTitle ?>
 
-* [http://www.kunstmeile-hamburg.de](http://www.kunstmeile-hamburg.de)
-* August 2010 – Dezember 2010
-* Auftraggeber: [TheGreenEyl](http://www.thegreeneyl.com/)
+* [http://www.berlinelektro.de](http://www.berlinelektro.de)
+* 2009 – 2011
+* Auftraggeber: elementar mediadesign GmbH, Berlin Elektro
 * <?= implode(', ', $technologies); ?>  
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -24,6 +21,4 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-Harrison, Custom Google Maps karte, News Datum, Archive, Newsletter, CMS
-
-<?= $this->view->render('element', 'imagelist', array('glob' => 'images/work/kunstmeile-hamburg/*.jpg')); ?>
+<?= $this->view->render('element', 'imagelist', array('glob' => 'images/work/berlinelektro/*.jpg')); ?>

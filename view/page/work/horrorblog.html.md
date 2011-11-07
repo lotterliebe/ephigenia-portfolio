@@ -10,6 +10,7 @@ technologies:
   - CSS3
   - SASS
   - Compass
+  - Media Queries
 
 # <?= $pageTitle ?>
 
@@ -17,11 +18,11 @@ technologies:
 * Juni 2009 – heute
 * <?= implode(', ', $technologies); ?>  
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Im Sommer 2009 entwickelte ich mein CMS und Blogsystem weiter so dass es mir
+möglich war dieses Blog rund um Fantasy- und Horrorfilme zu erstellen. Es
+bietet alle modernen Möglichkeiten die ein Blog haben muss und man ist immer
+über die neuesten Entwicklungen aus Hollywood und anderswo informiert.
+
+40000 Besucher im Monat, NGINX Server, High-Performance, A-Score bei YSlow
 
 <?= $this->view->render('element', 'imagelist', array('glob' => 'images/work/horrorblog/*.jpg')); ?>

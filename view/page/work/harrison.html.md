@@ -1,20 +1,15 @@
-title: Kunstmeile Hamburg
+title: Harrison CMS
 author: Marcel Eichner
 date: 2011-10-13
-technologies:
-  - PHP
-  - ephFrame
-  - XHTML
+technologies: 
+  - PHP 5
   - CSS
-  - Google Maps
-  - CMS
-  - Javascript
+  - HTML
 
 # <?= $pageTitle ?>
 
-* [http://www.kunstmeile-hamburg.de](http://www.kunstmeile-hamburg.de)
-* August 2010 – Dezember 2010
-* Auftraggeber: [TheGreenEyl](http://www.thegreeneyl.com/)
+* [https://github.com/Ephigenia/harrison](https://github.com/Ephigenia/harrison)
+* Juni 2010 – heute
 * <?= implode(', ', $technologies); ?>  
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -24,6 +19,4 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-Harrison, Custom Google Maps karte, News Datum, Archive, Newsletter, CMS
-
-<?= $this->view->render('element', 'imagelist', array('glob' => 'images/work/kunstmeile-hamburg/*.jpg')); ?>
+<?= $this->view->render('element', 'imagelist', array('glob' => 'images/work/harrison/*.jpg')); ?>

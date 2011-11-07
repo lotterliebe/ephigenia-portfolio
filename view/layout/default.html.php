@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title><?= @$pageTitle ?: '[no title]' ?></title>
 	<base href="<?= $baseUri ?>" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 	<link href="http://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet" type="text/css">
 	<link href="<?= $baseUri; ?>/css/screen.css" rel="stylesheet" type="text/css" />
 </head>
@@ -20,7 +20,7 @@
 				</ul>
 			</nav>
 		</header>
-		<div id="main" role="main">
+		<div id="main" <?php if (isset($class)) echo 'class="'.$class.'" '; ?>role="main">
 			<?= $content ?>
 		</div>
 		<footer id="footer">

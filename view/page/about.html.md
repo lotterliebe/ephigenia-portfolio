@@ -1,11 +1,12 @@
-title: About
+title: About Me
 author: [Marcel Eichner](love@ephigenia.de)
+class: about
 
 # <?= $pageTitle; ?>
 
-<img src="http://chart.apis.google.com/chart?cht=qr&amp;chof=gif&amp;chs=400x400&amp;chl=BEGIN%3AVCARD%0AVERSION%3A2.1%0AFN%3AMarcel+Eichner%0AN%3AEichner%3BMarcel%0ATEL%3BCELL%3A015122946946%0AEMAIL%3Alove%40ephigenia.de%0AURL%3BHOME%3Ahttp%3A%2F%2Fwww.ephigenia.de%0AADR%3BHOME%3A%3B%3BWarschauer+Str.+59a%3BBerlin%3B%3B10243%3BDeutschland%0AEND%3AVCARD" class="barcode">
-## Basics
 Marcel Eichner wurde 1983 in Berlin geboren. Er lebt in Berlin als Programmierer, Webdesigner, Film-Blogger und Illustrator. Studium des Kommunikationsdesigns an der FHTW Berlin. Selbständiger PHP-Programmierer. Arbeitete für/an verschiedene Web 2.0-Unternehmen und Open Source Projekten.
+
+<img src="http://chart.apis.google.com/chart?cht=qr&amp;chof=gif&amp;chs=400x400&amp;chl=BEGIN%3AVCARD%0AVERSION%3A2.1%0AFN%3AMarcel+Eichner%0AN%3AEichner%3BMarcel%0ATEL%3BCELL%3A015122946946%0AEMAIL%3Alove%40ephigenia.de%0AURL%3BHOME%3Ahttp%3A%2F%2Fwww.ephigenia.de%0AADR%3BHOME%3A%3B%3BWarschauer+Str.+59a%3BBerlin%3B%3B10243%3BDeutschland%0AEND%3AVCARD" class="barcode">
 
 ## Find me somewhere else
 * [XING](https://www.xing.com/profile/Marcel_Eichner/)
@@ -14,17 +15,15 @@ Marcel Eichner wurde 1983 in Berlin geboren. Er lebt in Berlin als Programmierer
 * [Twitter](http://twitter.com/ephigenia/)
 * [Facebook](http://www.facebook.com/people/Marcel-Eichner/651803117)
 * [GitHub](http://www.github.com/Ephigenia)
+* [Foursquare](http://www.foursquare.com/ephigenia/)
+* [Delicious](http://delicious.com/Ephigenia/)
 * [Ohloh](http://www.ohloh.net/accounts/Ephigenia/)
 * [Collabfinder](http://collabfinder.com/person/286-marceleichner/)
-* [Foursquare](http://www.foursquare.com/ephigenia/)
 * [MoviePilot](http://www.moviepilot.de/users/ephigenia/)
 * [Last.fm](http://lastfm.de/user/Ephigenia/)
-* [Delicious](http://delicious.com/Ephigenia/)
-* [XBox360](http://live.xbox.com/member/ephBox/)
 * [Vimeo](http://www.vimeo.com/ephigenia/)
-* [Aki-Aki](http://www.aka-aki.com/profiles/view/ephigenia)
 
-## ACTIVITIES
+## Activities
 I’ve been working for various clients and agencies in the past years:  
 [A++](http://www.ulischoeberl.com), [Deutschlandrock](http://www.deutschlandrock.com/), [Elementar Mediadesign](http://www.elementar.net/), [Junge Wilde Digitale](http://www.jungewildedigitale.de/), [NoMoreSleep](http://www.nomoresleep.net), [TripsByTips](http://www.tripsbytips.de/), [Escapio](http://www.escapio.de), [StudentSN](http://www.studentsn.com)
   
@@ -63,26 +62,48 @@ And I used to make life visuals, video clips and art with the [Superpositioners]
 * BASIC
 * Turbo Pascal
 
-## APPEARANCE/INTERVIEWS
-1. 2010/09 – 2011/01 Gastdozent im viermonatigen Seminar [Lebenskünstler](http://berlinergazette.de/viermonatiges-seminar-lebenskunstler/) der [Berliner Gazette](http://www.berlinergazette.de)
-1. 2010/11 Gastexperte (Bloggen & Social Media) beim Projekttutorium [Vernetzt Schreiben](http://berlinergazette.de/pt-vernetzt-schreiben/) an der HU Berlin
-1. 2010/06 Kurzvorstellung [Franklin](http://code.marceleichner.de/project/franklin) auf dem [LinuxTag 2010](http://www.linuxtag.org/2010/de/program/freies-vortragsprogramm/popup/vortragsdetails.html?talkid=491)
-1. 2010/05 Gastexperte beim Projekttutorium [Vernetzt Schreiben](http://berlinergazette.de/pt-vernetzt-schreiben/) an der HU Berlin
-1. 2010/02 Horrorblog.org Interview at [Rebell.tv](http://www.marceleichner.de/blog/horrorblog.org-im-rebell.tv-interview/)
-1. 2008/12 Interview and Illustrations in [NewWebPick Issue 19](http://www.newwebpick.com)
-1. 2006/05 <a href="../work/141/">First Exhibition</a> with <a href="http://www.one-week.de/" title="one-week" rel="external">One-Week</a> at <a href="http://www.zurmoebelfabrik.de/" rel="external">ZMF</a>/Berlin 
-1. 2005/09 Workshop with [Conny Neumair](http://www.vcap117.de/) about Max/MSP at Inframe VJ Battle Berlin
+## Appearances & Interviews
+1. **2010/09 – 2011/01**
+	Gastdozent im viermonatigen Seminar [Lebenskünstler](http://berlinergazette.de/viermonatiges-seminar-lebenskunstler/) der [Berliner Gazette](http://www.berlinergazette.de)
+1. **2010/11**
+	Gastexperte (Bloggen & Social Media) beim Projekttutorium [Vernetzt Schreiben](http://berlinergazette.de/pt-vernetzt-schreiben/) an der HU Berlin
+1. **2010/06**
+	Kurzvorstellung [Franklin](http://code.marceleichner.de/project/franklin) auf dem [LinuxTag 2010](http://www.linuxtag.org/2010/de/program/freies-vortragsprogramm/popup/vortragsdetails.html?talkid=491)
+1. **2010/05**
+	Gastexperte beim Projekttutorium [Vernetzt Schreiben](http://berlinergazette.de/pt-vernetzt-schreiben/) an der HU Berlin
+1. **2010/02**
+	Horrorblog.org Interview at [Rebell.tv](http://www.marceleichner.de/blog/horrorblog.org-im-rebell.tv-interview/)
+1. **2008/12**
+	Interview and Illustrations in [NewWebPick Issue 19](http://www.newwebpick.com)
+1. **2006/05**
+	First Exhibition with One-Week at [ZMF](http://www.zurmoebelfabrik.de/) Berlin
+1. **2005/09**
+	Workshop with [Conny Neumair](http://www.vcap117.de/) about Max/MSP at Inframe VJ Battle Berlin
 
-## PRESS/PRINT
-1. 2008/05 [Zeixs Websites 2](http://www.amazon.de/gp/product/3939998176?ie=UTF8&tag=marceich-21&linkCode=as2&camp=1638&creative=6742&creativeASIN=3939998176)
-1. 2007/08 [ZEIXS - Illustration](http://www.amazon.de/gp/product/3939998087?ie=UTF8&tag=marceich-21&linkCode=as2&camp=1638&creative=6742&creativeASIN=3939998087)
-1. 2007/05 Illustration-Tutorial Article in [VISUAL-X Magazine](http://www.visualxmag.de/)
-1. 2007/04 Cover Illustration for [NOVUM](http://www.novumnet.de/) Issue April/May 07
-1. 2006/06 Article about Susanne Paschke’s Website in [Visual-X Magazine](http://visualxmag.de/itr/ausgaben/psecom,id,316,nodeid,215.html)
-1. 2006/03 [Web Design Index 6](http://www.amazon.de/gp/product/9057680939?ie=UTF8&tag=marceich-21&linkCode=as2&camp=1638&creative=6742&creativeASIN=9057680939) Book
-1. 2005/02 PAGE Magazine mentioned  my Illustration for Fontmonster Book
-1. 2004/10 [Freewave](http://www.amazon.com/exec/obidos/tg/detail/-/1861542739/qid=1097497519/sr=1-1/ref=sr_1_1/103-0524911-8359826?v=glance&s=books") Fontmonster Book
-1. 2004/07 Spatium-Website in Book [Websites](http://www.amazon.de/gp/product/3899850505?ie=UTF8&tag=marceich-21=as2&camp=1638&creative=6742&creativeASIN=3899850505) by Feierabendverlag
-1. 2004/06 Title Illustration for Mex Magazine, Schwitzerland
-1. 2003/09 Design made in Germany featured in Taschen's 1000 Favourite Websites
-1. 2002/10 Design made in Germany featured in PAGE Magazine
+## Press
+1. **2010 – 2011**
+	Various illustrations used for illustrating articles published in the [Berliner Gazette](http://www.berlinergazette.de)
+1. **2008/05**
+	[Zeixs Websites 2](http://www.amazon.de/gp/product/3939998176?ie=UTF8&tag=marceich-21&linkCode=as2&camp=1638&creative=6742&creativeASIN=3939998176)
+1. **2007/08**
+	[ZEIXS - Illustration](http://www.amazon.de/gp/product/3939998087?ie=UTF8&tag=marceich-21&linkCode=as2&camp=1638&creative=6742&creativeASIN=3939998087)
+1. **2007/05**
+	Illustration-Tutorial Article in [VISUAL-X Magazine](http://www.visualxmag.de/)
+1. **2007/04**
+	Cover Illustration for [NOVUM](http://www.novumnet.de/) Issue April/May 07
+1. **2006/06**
+	Article about Susanne Paschke’s Website in [Visual-X Magazine](http://visualxmag.de/itr/ausgaben/psecom,id,316,nodeid,215.html)
+1. **2006/03**
+	[Web Design Index 6](http://www.amazon.de/gp/product/9057680939?ie=UTF8&tag=marceich-21&linkCode=as2&camp=1638&creative=6742&creativeASIN=9057680939) Book
+1. **2005/02**
+	PAGE Magazine mentioned  my Illustration for Fontmonster Book
+1. **2004/10**
+	[Freewave](http://www.amazon.com/exec/obidos/tg/detail/-/1861542739/qid=1097497519/sr=1-1/ref=sr_1_1/103-0524911-8359826?v=glance&s=books") Fontmonster Book
+1. **2004/07**
+	Spatium-Website in Book [Websites](http://www.amazon.de/gp/product/3899850505?ie=UTF8&tag=marceich-21=as2&camp=1638&creative=6742&creativeASIN=3899850505) by Feierabendverlag
+1. **2004/06**
+	Title Illustration for Mex Magazine, Schwitzerland
+1. **2003/09**
+	Design made in Germany featured in Taschen's 1000 Favourite Websites
+1. **2002/10**
+	Design made in Germany featured in PAGE Magazine

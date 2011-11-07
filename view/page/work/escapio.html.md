@@ -6,10 +6,15 @@ technologies:
 
 # <?= $pageTitle; ?>
 
-* <?= implode(', ', $technologies); ?>
+* [http://www.escapio.com](http://www.escapio.com)
+* Frühjahr 2008
+* Auftraggeber: Escapio
+* <?= implode(', ', $technologies); ?>  
 
-Gemeinsam mit zwei anderen Programmierern konnten wir innerhalb von 4 Monaten
-eine komplette Online-Community aufbauen. Die Website, die sich rund ums
-Reisen dreht, ist mittlerweile mit einer zweiten Version online.
+Vom Frühjahr bis zum Sommer 2008 unterstützte ich das Entwickler-Team bei
+Escapio mit meinen umfangreichen Kenntnissen in PHP. Neben der Optimierung und
+Erweiterung des schon bestehenden Programmcodes konnte ich unter anderem eine
+Rabattfunktion in das besonders ausgefeilte Reservierungs- und Buchungssystem
+integrieren.
 
 <?= $this->view->render('element', 'imagelist', array('glob' => 'images/work/escapio/*.jpg')); ?>

@@ -212,38 +212,71 @@ a:hover, a:active {
   outline: none;
 }
 
-/* line 3, ../sass/partial/_typography.scss */
-h1, h2, h3, h4, h5, h6 {
-  text-shadow: white 1px 1px 0px, #cccccc 1px 1px 2px;
-}
-
-/* line 9, ../sass/partial/_typography.scss */
+/* line 6, ../sass/partial/_typography.scss */
 h1 {
   font-size: 3em;
   line-height: 1em;
   margin-bottom: 0.45em;
 }
 
-/* line 13, ../sass/partial/_typography.scss */
+/* line 10, ../sass/partial/_typography.scss */
 h2 {
   font-size: 2em;
   line-height: 1.5em;
 }
 
-/* line 17, ../sass/partial/_typography.scss */
+/* line 14, ../sass/partial/_typography.scss */
 p, ul, ol, dl {
   margin-bottom: 1.5em;
 }
 
-/* line 22, ../sass/partial/_typography.scss */
+/* line 18, ../sass/partial/_typography.scss */
+em {
+  font-weight: 700;
+  background-color: #FEFDE1;
+}
+
+/* line 23, ../sass/partial/_typography.scss */
+strong {
+  font-weight: 700;
+}
+
+/* line 28, ../sass/partial/_typography.scss */
 #main ul {
   padding-left: 1em;
   list-style-type: disc;
 }
-/* line 26, ../sass/partial/_typography.scss */
+/* line 32, ../sass/partial/_typography.scss */
 #main ol {
   padding-left: 1.5em;
   list-style-type: decimal;
+}
+/* line 37, ../sass/partial/_typography.scss */
+#main.about ul, #main.about ol {
+  padding: 0;
+  margin-bottom: 1.5em;
+}
+/* line 40, ../sass/partial/_typography.scss */
+#main.about ul li, #main.about ol li {
+  display: inline;
+}
+/* line 44, ../sass/partial/_typography.scss */
+#main.about ol li {
+  display: block;
+  border-bottom: 1px solid #cccccc;
+  padding-top: 0.375em;
+  padding-bottom: 0.375em;
+}
+/* line 49, ../sass/partial/_typography.scss */
+#main.about ol li strong {
+  margin-right: 0.25em;
+}
+@media only screen and (max-width: 520px) {
+  /* line 49, ../sass/partial/_typography.scss */
+  #main.about ol li strong {
+    display: block;
+    clear: both;
+  }
 }
 
 /* line 3, ../sass/partial/_application.scss */
@@ -251,17 +284,14 @@ html {
   background: white;
   min-height: 100%;
   padding: 0.625em 1.25em 1.25em 1.25em;
+  margin: 0 auto;
+  max-width: 960px;
 }
 
-/* line 9, ../sass/partial/_application.scss */
+/* line 11, ../sass/partial/_application.scss */
 #header {
-  border-bottom: 1px double #999999;
-  margin-bottom: 1.5em;
   text-align: center;
-}
-/* line 13, ../sass/partial/_application.scss */
-#header h1 {
-  margin-bottom: 0.375em;
+  margin-bottom: 1.5em;
 }
 /* line 15, ../sass/partial/_application.scss */
 #header h1:before {
@@ -283,48 +313,75 @@ html {
 #header ul li:last-child:after {
   content: '';
 }
+@media only screen and (max-width: 520px) {
+  /* line 11, ../sass/partial/_application.scss */
+  #header {
+    padding: 0;
+  }
+  /* line 36, ../sass/partial/_application.scss */
+  #header ul {
+    padding: 0;
+    margin-bottom: 0.75em;
+  }
+  /* line 40, ../sass/partial/_application.scss */
+  #header h1 {
+    font-size: 1.5em;
+    line-height: 1em;
+  }
+}
 
-/* line 35, ../sass/partial/_application.scss */
+/* line 45, ../sass/partial/_application.scss */
 #footer {
+  display: inline-block;
   font-size: 0.75em;
   line-height: 2em;
   margin-top: 1.5em;
   border-top: 1px double #999999;
 }
 
-/* line 42, ../sass/partial/_application.scss */
+/* line 53, ../sass/partial/_application.scss */
 #main img {
   width: 100%;
 }
+@media only screen and (min-width: 520px) {
+  /* line 55, ../sass/partial/_application.scss */
+  #main img.barcode {
+    float: right;
+    margin-left: 2em;
+    width: 300px;
+    height: 300px;
+  }
+}
 
-/* line 47, ../sass/partial/_application.scss */
+/* line 66, ../sass/partial/_application.scss */
 ul.imagelist {
   list-style-type: none;
   padding: 0;
 }
-/* line 50, ../sass/partial/_application.scss */
+/* line 69, ../sass/partial/_application.scss */
 ul.imagelist li {
   display: inline-block;
   vertical-align: top;
   max-width: 24.5%;
+  margin-bottom: 1.5em;
 }
 @media only screen and (max-width: 960px) {
-  /* line 50, ../sass/partial/_application.scss */
+  /* line 69, ../sass/partial/_application.scss */
   ul.imagelist li {
     max-width: 32.5%;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 50, ../sass/partial/_application.scss */
+  /* line 69, ../sass/partial/_application.scss */
   ul.imagelist li {
     max-width: 100%;
   }
 }
-/* line 60, ../sass/partial/_application.scss */
+/* line 80, ../sass/partial/_application.scss */
 ul.imagelist li:after {
   content: '';
 }
-/* line 63, ../sass/partial/_application.scss */
+/* line 83, ../sass/partial/_application.scss */
 ul.imagelist li a {
   text-decoration: none;
 }

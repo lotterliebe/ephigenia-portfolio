@@ -4,14 +4,14 @@ html {
 	@include background($application-background-color);
 	min-height: 100%;
 	padding: pxToEm(10px) pxToEm(20px) pxToEm(20px) pxToEm(20px);
+	margin: 0 auto;
+	max-width: 960px;
 }
 
 #header {
-	border-bottom: 1px double lighten($text-color, 40);
-	@include trailer(1);
 	text-align: center;
+	@include trailer(1);
 	h1 {
-		@include trailer(0.25);
 		&:before {
 			position: relative;
 			top: 0.125em;
@@ -20,7 +20,7 @@ html {
 			color: #fff400;
 		}
 	}
-	ul {	
+	ul {
 		li {
 			display: inline-block;
 			&:after {
@@ -31,8 +31,19 @@ html {
 			}
 		}
 	}
+	@media only screen and (max-width: 520px) {
+		padding: 0;
+		ul {
+			padding: 0;
+			@include trailer(0.5);
+		}
+		h1 {
+			@include adjust-font-size-to($base-font-size * 1.5, 1);
+		}
+	}
 }
 #footer {
+	display: inline-block;
 	@include adjust-font-size-to($base-font-size * 0.75);
 	@include leader(1);
 	border-top: 1px double lighten($text-color, 40);
@@ -41,6 +52,14 @@ html {
 #main {
 	img {
 		width: 100%;
+		&.barcode {
+			@media only screen and (min-width: 520px) {
+				float: right;
+				margin-left: 2em;
+				width: 300px;
+				height: 300px; 
+			}
+		}
 	}
 }
 
@@ -51,6 +70,7 @@ ul.imagelist {
 		display: inline-block;
 		vertical-align: top;
 		max-width: 24.5%;
+		@include trailer(1);
 		@media only screen and (max-width: 960px) {
 			max-width: 32.5%;
 		}

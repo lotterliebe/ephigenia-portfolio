@@ -1,10 +1,7 @@
 @import "compass/layout/grid-background";
 
 #{headings()} {
-	text-shadow:
-		invert($headline-color) 1px 1px 0px,
-		lighten($headline-color, 80) 1px 1px 2px
-	;
+	
 }
 h1 {
 	@include adjust-font-size-to($base-font-size * 3, 2);
@@ -18,6 +15,15 @@ p, ul, ol, dl {
 	@include trailer(1);
 }
 
+em {
+	font-weight: 700;
+	background-color: #FEFDE1;
+}
+
+strong {
+	font-weight: 700;
+}
+
 #main {
 	ul {
 		padding-left: 1em;
@@ -26,5 +32,27 @@ p, ul, ol, dl {
 	ol {
 		padding-left: 1.5em;
 		list-style-type: decimal;
+	}
+	&.about {
+		ul, ol {
+			padding: 0;
+			@include trailer(1);
+			li {
+				display: inline;
+			}
+		}
+		ol li {
+			display: block;
+			border-bottom: 1px solid darken(white, 20);
+			@include padding-leader(0.25);
+			@include padding-trailer(0.25);
+			strong {
+				margin-right: 0.25em;
+				@media only screen and (max-width: 520px) {
+					display: block;
+					clear: both;
+				}
+			}
+		}
 	}
 }

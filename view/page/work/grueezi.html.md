@@ -1,16 +1,16 @@
-title: WeSC
-author: Marcel Eichner
-date: 2011-10-13
-technologies: 
+title: Grüezi Real Estate
+author: [Marcel Eichner](love@ephigenia.de)
+date: 2011-10-18
+technologies:
+  - PHP4
+  - CMS
   - HTML
-  - CSS
-  - SASS
-  - Compass
 
-# <?= $pageTitle ?>
+# <?= $pageTitle; ?>
 
-* [http://www.berlinelektro.de](http://www.berlinelektro.de)
-* 
+* [http://www.grueezi.de/](http://www.grueezi.de/)
+* Februar 2009
+* Auftraggeber: NoMoreSleep
 * <?= implode(', ', $technologies); ?>  
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -20,4 +20,4 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-<?= $this->view->render('element', 'imagelist', array('glob' => 'images/work/berlinelektro/*.jpg')); ?>
+<?= $this->view->render('element', 'imagelist', array('glob' => 'images/work/grueezi/*.jpg')); ?>

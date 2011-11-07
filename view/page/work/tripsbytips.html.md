@@ -7,7 +7,9 @@ technologies:
 
 # <?= $pageTitle; ?>
 
-* <?= implode(', ', $technologies); ?>
+* [http://www.tripsbytips.de](http://www.tripsbytips.de)
+* 2007
+* <?= implode(', ', $technologies); ?>  
 
 Gemeinsam mit zwei anderen Programmierern konnten wir innerhalb von 4 Monaten
 eine komplette Online-Community aufbauen. Die Website, die sich rund ums
