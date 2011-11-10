@@ -4,22 +4,17 @@ html {
 	@include background($application-background-color);
 	min-height: 100%;
 	padding: pxToEm(10px) pxToEm(20px) pxToEm(20px) pxToEm(20px);
+	border-top: pxToEm(10px) solid $special-color;
+}
+body {
+	@include background($main-background-color);
 	margin: 0 auto;
-	max-width: 960px;
+	max-width: pxToEm(920px);
 }
 
 #header {
 	text-align: center;
-	@include trailer(1);
-	h1 {
-		&:before {
-			position: relative;
-			top: 0.125em;
-			content: '■';
-			font-size: 200%;
-			color: #fff400;
-		}
-	}
+	@include trailer(1.5);
 	ul {
 		li {
 			display: inline-block;
@@ -31,22 +26,15 @@ html {
 			}
 		}
 	}
-	@media only screen and (max-width: 520px) {
-		padding: 0;
-		ul {
-			padding: 0;
-			@include trailer(0.5);
-		}
-		h1 {
-			@include adjust-font-size-to($base-font-size * 1.5, 1);
-		}
-	}
 }
 #footer {
+	padding-right: 1em;
+	padding-left: 0.5em;
 	display: inline-block;
 	@include adjust-font-size-to($base-font-size * 0.75);
 	@include leader(1);
-	border-top: 1px double lighten($text-color, 40);
+	border-top: 1px solid lighten($text-color, 50);
+	border-left: 3px double lighten($text-color, 50);
 }
 
 #main {
@@ -63,10 +51,12 @@ html {
 	}
 }
 
-ul.imagelist {
+#main ul.imagelist {
 	list-style-type: none;
 	padding: 0;
 	li {
+		margin: 0;
+		padding: 0;
 		display: inline-block;
 		vertical-align: top;
 		max-width: 24.5%;

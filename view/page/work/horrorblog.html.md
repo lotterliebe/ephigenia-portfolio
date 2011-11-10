@@ -18,6 +18,13 @@ technologies:
 * Juni 2009 – heute
 * <?= implode(', ', $technologies); ?>  
 
+Pressevorführungen, Verlosungen, Kontakt zu Verleih und Produktion (international), Interaktion auf Facebook/Twitter, Social Media Organisation,
+Praktikanten!!
+
+Das Horrorblog enstand aus einem privaten Hobby von mir und entwickelte sich schnell zu einer erfolgreichen Website die weit mehr benötigt als einen Programmierer der sich um die technischen Belange kümmert.
+
+Durch die ständige Optimierung des Front– und Backend und die Umstellung der Server Software von Apache2 auf NGINX wurde die Performance extrem verbessert.
+
 Im Sommer 2009 entwickelte ich mein CMS und Blogsystem weiter so dass es mir
 möglich war dieses Blog rund um Fantasy- und Horrorfilme zu erstellen. Es
 bietet alle modernen Möglichkeiten die ein Blog haben muss und man ist immer

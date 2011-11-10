@@ -1,14 +1,21 @@
 @import "compass/layout/grid-background";
 
 #{headings()} {
-	
 }
 h1 {
-	@include adjust-font-size-to($base-font-size * 3, 2);
-	@include trailer(0.30);
+	font-style: italic;
+	@include adjust-font-size-to($headline-font-size, 2);
+	@include trailer(0.125);
+	@media only screen and (max-width: 520px) {
+		@include adjust-font-size-to($headline-font-size * 0.65, 1.25);
+	}
 }
 h2 {
-	@include adjust-font-size-to($base-font-size * 2, 2);
+	font-style: italic;
+	@include adjust-font-size-to($headline-font-size * 0.75, 2);
+	@media only screen and (max-width: 520px) {
+		@include adjust-font-size-to($headline-font-size * 0.5, 1);
+	}
 }
 
 p, ul, ol, dl {
@@ -26,7 +33,7 @@ strong {
 
 #main {
 	ul {
-		padding-left: 1em;
+		padding-left: 1.5em;
 		list-style-type: disc;
 	}
 	ol {

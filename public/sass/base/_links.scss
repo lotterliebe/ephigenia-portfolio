@@ -7,9 +7,12 @@ $link-focus-color: $link-hover-color;
 a {
 	@include link-colors($link-color, $link-hover-color, $link-active-color, $link-visited-color, $link-focus-color);
 	outline: none;
+	@include transition-property("background-color");
+	@include transition-duration(0.25s);
 	&:hover, &:active {
 		-moz-outline-style: none;
 		-webkit-tap-highlight-color: #FF5E99;
 		outline: none;
+		@include background(lighten($special-color, 40));
 	}
 }
