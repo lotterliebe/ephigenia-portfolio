@@ -14,11 +14,15 @@ technologies:
 * Auftraggeber: elementar mediadesign GmbH, Berlin Elektro
 * <?= implode(', ', $technologies); ?>  
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Berlin Elektro ist ein berliner Unternehmen das deutschlandweit weisse Ware verkauft.
+Die Shop Software wurde vom Kunden selbst entwickelt und man entschied sich
+Anfang 2011 für einen Relaunch der auch eine umgestaltung des Frontends beinhalten sollte.
+
+Für das berliner Unternehmen Berlin Elektro setzte ich die von elementar 
+mediadesign gmbh erstellten designs in HTML und CSS um. Das besondere bei
+diesem Projekt ist, dass die CSS Dateien mit Compass bzw. Sass erzeugt wurden
+welches es ermöglichte in wenigen Arbeitsstunden den Look der Websites an 
+die zwei anderen Shop-Frontends, welche sich nur marginal unterscheiden,
+anzupassen.
 
 <?= $this->view->render('element', 'imagelist', array('glob' => 'images/work/berlinelektro/*.jpg')); ?>

@@ -13,11 +13,14 @@ technologies:
 * 2010
 * <?= implode(', ', $technologies); ?>  
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Franklin ist ein open source software projekt welches von mir 2009 initiert wurde und
+seit dem immer mehr Zuspruch und Anwendnung vor allem bei SEO Experten findet. Ist die
+software in wenigen Schritten eingerichtet erhält man ein an seine Bedürfnisse angepassetes
+Dashboard welches den Zeitlichen verlauf von zum Beispiel der Anzahl Fans auf Facebook,
+Twitter-Follower oder RSS-Lesern anzeigt. So kann man Rückschlüsse über den Erfolg von 
+Kampagnen und Aktionen ziehen und spart sich das mühsame zusammensuchen der Kennzahlen.
+
+Eine ständige Weiterentwicklung des Projekts und die Erweiterung mit neuen Tests welche
+neue Kennzahlen zur Verfügung stellen sind auch super.
 
 <?= $this->view->render('element', 'imagelist', array('glob' => 'images/work/franklin/*.jpg')); ?>
