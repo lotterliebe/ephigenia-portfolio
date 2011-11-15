@@ -4,6 +4,7 @@
 }
 h1 {
 	font-style: italic;
+	letter-spacing: -.0.5em;
 	@include adjust-font-size-to($headline-font-size, 2);
 	@include trailer(0.125);
 	@media only screen and (max-width: 520px) {
@@ -28,10 +29,16 @@ em {
 }
 
 strong {
-	font-weight: 700;
+	font-weight: 400;
 }
 
 #main {
+	h1 {
+		@include adjust-font-size-to($headline-font-size * 0.75, 2);
+	}
+	h2 {
+		@include adjust-font-size-to($headline-font-size * 0.5, 2);
+	}
 	ul {
 		padding-left: 1.5em;
 		list-style-type: disc;
@@ -39,6 +46,17 @@ strong {
 	ol {
 		padding-left: 1.5em;
 		list-style-type: decimal;
+	}
+	article {
+		max-width: 1024px;
+		margin: 0 auto;
+		div.text {
+			@media only screen and (min-width: 780px) {
+				@include column-count(2);
+				@include column-gap(2em);
+			}
+			text-align: hyphenate;
+		}
 	}
 	&.about {
 		ul, ol {

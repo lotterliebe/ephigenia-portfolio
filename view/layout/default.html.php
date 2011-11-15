@@ -5,7 +5,7 @@
 	<title><?= @$pageTitle ?: '[no title]' ?></title>
 	<base href="<?= $baseUri ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-	<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu:300,500italic' rel='stylesheet' type='text/css'>
+	<link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400|Oswald" rel="stylesheet" type="text/css">
 	<link href="<?= $baseUri; ?>/css/screen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -21,7 +21,9 @@
 			</nav>
 		</header>
 		<div id="main" <?php if (isset($class)) echo 'class="'.$class.'" '; ?>role="main">
-			<?= $content ?>
+			<article>
+				<?= $content ?>
+			</article>
 		</div>
 		<footer id="footer">
 			© 2011 Marcel Eichner, <a href="<?= $Router->page(array('path' => 'imprint')); ?>">Impressum</a>

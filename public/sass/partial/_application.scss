@@ -3,13 +3,12 @@
 html {
 	@include background($application-background-color);
 	min-height: 100%;
+	border-top: pxToEm(5px) solid $special-color;
 	padding: pxToEm(10px) pxToEm(20px) pxToEm(20px) pxToEm(20px);
-	border-top: pxToEm(10px) solid $special-color;
 }
 body {
-	@include background($main-background-color);
 	margin: 0 auto;
-	max-width: pxToEm(920px);
+	position: relative;
 }
 
 #header {

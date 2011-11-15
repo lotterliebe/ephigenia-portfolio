@@ -1,9 +1,9 @@
-$text-color: lighten(#000, 20);
+$text-color: lighten(#131215, 20);
 $highlight-color: #000;
-$application-background-color: #fff;
+$application-background-color: #ffffff;
 
-$main-background-color: #fff;
-$special-color: #fff400;
+$main-background-color: $application-background-color;
+$special-color: #FFDB00;
 
 $base-font-size: 18px;
 $base-line-height: 26px;
@@ -12,10 +12,10 @@ $base-font: "Ubuntu", Lucida, Verdana, sans-serif;
 
 $monospace-font: "Ubuntu Mono", Monaco, monospace, sans-serif;
 
-$headline-font-size: $base-font-size * 2;
+$headline-font-size: $base-font-size * 2.5;
 $headline-color: #000;
 $headline-font-weight: 500;
-$headline-font: $base-font;
+$headline-font: "Oswald", "Helvetica";
 
 $highlight-color: #0060A3;
 $link-color: $text-color;

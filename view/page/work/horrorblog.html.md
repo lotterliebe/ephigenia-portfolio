@@ -18,6 +18,7 @@ technologies:
 * Juni 2009 – heute
 * <?= implode(', ', $technologies); ?>  
 
+<div class="text" markdown="1">
 Pressevorführungen, Verlosungen, Kontakt zu Verleih und Produktion (international), Interaktion auf Facebook/Twitter, Social Media Organisation,
 Praktikanten!!
 
@@ -31,5 +32,6 @@ bietet alle modernen Möglichkeiten die ein Blog haben muss und man ist immer
 über die neuesten Entwicklungen aus Hollywood und anderswo informiert.
 
 40000 Besucher im Monat, NGINX Server, High-Performance, A-Score bei YSlow
+</div>
 
 <?= $this->view->render('element', 'imagelist', array('glob' => 'images/work/horrorblog/*.jpg')); ?>
