@@ -1,3 +1,4 @@
+---
 title: Berliner Gazette
 author: Marcel Eichner
 date: 2011-10-13
@@ -10,6 +11,7 @@ technologies:
   - HTML
   - Hosting
   - Media Queries
+---
 
 # <?= $pageTitle ?>
 

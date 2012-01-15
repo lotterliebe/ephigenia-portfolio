@@ -24,11 +24,9 @@ class Markdown extends \ephFrame\view\Renderer
 		$parser = new \MarkdownExtra_Parser();
 		$content = parent::render($filename, $data);
 		// strip metadata
-		$metadataEnd = strpos($content, "\n\n");
-		if ($metadataEnd > 0) {
-			$content = substr($content, $metadataEnd);
+		if (preg_match_all('@^---(.+)---(.+)@s', $content, $found)) {
+			$content = $found[2][0];
 		}
-		// render markdown
 		$rendered = $parser->transform($content);
 		return $rendered;
 	}
@@ -37,13 +35,16 @@ class Markdown extends \ephFrame\view\Renderer
 	{
 		$filename = APP_ROOT.DIRECTORY_SEPARATOR.'view/page/'.$this->filename($filename.'.html');
 		$contents = file_get_contents($filename);
-		$metadata = substr($contents, 0, strpos($contents, "\n\n"));
+		if (!preg_match_all('@^---(.+)---(.+)@s', $contents, $found)) {
+			return array();
+		}
+		$metadata = $found[1][0];
 		// parse meta data
 		if (!class_exists('sfYaml')) {
 			require LIB_DIR.'/php-yaml/lib/sfYaml.php';
 		}
 		$yaml = new \sfYaml();
 		$data = $yaml->load($metadata);
-		return $data ?: array();
+		return $data;
 	}
 }

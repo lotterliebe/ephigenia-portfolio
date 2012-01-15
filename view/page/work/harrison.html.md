@@ -1,3 +1,4 @@
+---
 title: Harrison CMS
 author: Marcel Eichner
 date: 2011-10-13
@@ -5,6 +6,7 @@ technologies:
   - PHP 5
   - CSS
   - HTML
+---
 
 # <?= $pageTitle ?>
 

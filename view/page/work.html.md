@@ -1,6 +1,8 @@
+---
 title: Work
 author: [Marcel Eichner](love@ephigeniad.de)
 date: 2011-10-18
+---
 
 <ul class="imagelist">
 <?php

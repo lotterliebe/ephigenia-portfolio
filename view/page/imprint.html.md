@@ -1,4 +1,10 @@
-# Imprint
+---
+title: Impressum
+author: [Marcel Eichner](love@ephigenia.de)
+---
+
+# <?= $pageTitle; ?>
+
 
 <div class="vcard">
 	<div class="adr">

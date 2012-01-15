@@ -1,6 +1,8 @@
+---
 title: About Me
 author: [Marcel Eichner](love@ephigenia.de)
 class: about
+---
 
 # <?= $pageTitle; ?>
 

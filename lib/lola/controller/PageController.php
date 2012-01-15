@@ -15,7 +15,6 @@ class PageController extends \ephFrame\core\Controller
 		foreach($renderer->metadata($path) as $key => $value) {
 			switch(strtolower($key)) {
 				case 'title':
-					
 					$this->view['pageTitle'] = $value;
 					break;
 				case 'layout':
