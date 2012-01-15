@@ -1,82 +1,58 @@
 @import "compass/layout/grid-background";
 
-#{headings()} {
-}
 h1 {
 	font-style: italic;
-	letter-spacing: -.0.5em;
 	@include adjust-font-size-to($headline-font-size, 2);
-	@include trailer(0.125);
-	@media only screen and (max-width: 520px) {
-		@include adjust-font-size-to($headline-font-size * 0.65, 1.25);
-	}
 }
 h2 {
 	font-style: italic;
 	@include adjust-font-size-to($headline-font-size * 0.75, 2);
-	@media only screen and (max-width: 520px) {
-		@include adjust-font-size-to($headline-font-size * 0.5, 1);
-	}
 }
 
 p, ul, ol, dl {
 	@include trailer(1);
+	text-align: hyphenate;
 }
 
 em {
 	font-weight: 700;
 	background-color: #FEFDE1;
 }
-
 strong {
 	font-weight: 400;
 }
 
 #main {
-	h1 {
-		@include adjust-font-size-to($headline-font-size * 0.75, 2);
-	}
-	h2 {
-		@include adjust-font-size-to($headline-font-size * 0.5, 2);
+	ul, ol {
+		padding-left: 1.5em;
+		@include trailer(1);
 	}
 	ul {
-		padding-left: 1.5em;
 		list-style-type: disc;
 	}
 	ol {
-		padding-left: 1.5em;
 		list-style-type: decimal;
 	}
-	article {
-		max-width: 1024px;
-		margin: 0 auto;
-		div.text {
-			@media only screen and (min-width: 780px) {
-				@include column-count(2);
-				@include column-gap(2em);
-			}
-			text-align: hyphenate;
+}
+
+
+#main.about {
+	ul, ol {
+		padding: 0;
+		li {
+			display: inline;
 		}
 	}
-	&.about {
-		ul, ol {
-			padding: 0;
-			@include trailer(1);
-			li {
-				display: inline;
-			}
-		}
-		ol li {
-			display: block;
-			border-bottom: 1px solid darken(white, 20);
-			@include padding-leader(0.25);
-			@include padding-trailer(0.25);
-			strong {
-				margin-right: 0.25em;
-				@media only screen and (max-width: 520px) {
-					display: block;
-					clear: both;
-				}
+	ol li {
+		display: block;
+		border-bottom: 1px solid darken(white, 20);
+		@include padding-leader(0.25);
+		@include padding-trailer(0.25);
+		strong {
+			margin-right: 0.25em;
+			@media only screen and (max-width: 520px) {
+				display: block;
+				clear: both;
 			}
 		}
 	}

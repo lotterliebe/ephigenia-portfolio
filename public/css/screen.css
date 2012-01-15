@@ -70,7 +70,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 51, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 body {
   font-size: 112.5%;
-  line-height: 1.444em;
+  line-height: 1.667em;
 }
 
 /* line 55, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
@@ -221,116 +221,72 @@ a:hover, a:active {
   background: #fff8cc;
 }
 
-/* line 5, ../sass/partial/_typography.scss */
+/* line 3, ../sass/partial/_typography.scss */
 h1 {
   font-style: italic;
-  letter-spacing: 0 0.5em;
   font-size: 2.5em;
-  line-height: 1.156em;
-  margin-bottom: 0.181em;
-}
-@media only screen and (max-width: 520px) {
-  /* line 5, ../sass/partial/_typography.scss */
-  h1 {
-    font-size: 1.625em;
-    line-height: 1.111em;
-  }
+  line-height: 1.333em;
 }
 
-/* line 14, ../sass/partial/_typography.scss */
+/* line 7, ../sass/partial/_typography.scss */
 h2 {
   font-style: italic;
   font-size: 1.875em;
-  line-height: 1.541em;
-}
-@media only screen and (max-width: 520px) {
-  /* line 14, ../sass/partial/_typography.scss */
-  h2 {
-    font-size: 1.25em;
-    line-height: 1.156em;
-  }
+  line-height: 1.778em;
 }
 
-/* line 22, ../sass/partial/_typography.scss */
+/* line 12, ../sass/partial/_typography.scss */
 p, ul, ol, dl {
-  margin-bottom: 1.444em;
+  margin-bottom: 1.667em;
+  text-align: hyphenate;
 }
 
-/* line 26, ../sass/partial/_typography.scss */
+/* line 17, ../sass/partial/_typography.scss */
 em {
   font-weight: 700;
   background-color: #FEFDE1;
 }
 
-/* line 31, ../sass/partial/_typography.scss */
+/* line 21, ../sass/partial/_typography.scss */
 strong {
   font-weight: 400;
 }
 
-/* line 36, ../sass/partial/_typography.scss */
-#main h1 {
-  font-size: 1.875em;
-  line-height: 1.541em;
-}
-/* line 39, ../sass/partial/_typography.scss */
-#main h2 {
-  font-size: 1.25em;
-  line-height: 2.311em;
-}
-/* line 42, ../sass/partial/_typography.scss */
-#main ul {
+/* line 26, ../sass/partial/_typography.scss */
+#main ul, #main ol {
   padding-left: 1.5em;
+  margin-bottom: 1.667em;
+}
+/* line 30, ../sass/partial/_typography.scss */
+#main ul {
   list-style-type: disc;
 }
-/* line 46, ../sass/partial/_typography.scss */
+/* line 33, ../sass/partial/_typography.scss */
 #main ol {
-  padding-left: 1.5em;
   list-style-type: decimal;
 }
-/* line 50, ../sass/partial/_typography.scss */
-#main article {
-  max-width: 1024px;
-  margin: 0 auto;
-}
-/* line 53, ../sass/partial/_typography.scss */
-#main article div.text {
-  text-align: hyphenate;
-}
-@media only screen and (min-width: 780px) {
-  /* line 53, ../sass/partial/_typography.scss */
-  #main article div.text {
-    -moz-column-count: 2;
-    -webkit-column-count: 2;
-    -o-column-count: 2;
-    column-count: 2;
-    -moz-column-gap: 2em;
-    -webkit-column-gap: 2em;
-    -o-column-gap: 2em;
-    column-gap: 2em;
-  }
-}
-/* line 62, ../sass/partial/_typography.scss */
+
+/* line 40, ../sass/partial/_typography.scss */
 #main.about ul, #main.about ol {
   padding: 0;
-  margin-bottom: 1.444em;
 }
-/* line 65, ../sass/partial/_typography.scss */
+/* line 42, ../sass/partial/_typography.scss */
 #main.about ul li, #main.about ol li {
   display: inline;
 }
-/* line 69, ../sass/partial/_typography.scss */
+/* line 46, ../sass/partial/_typography.scss */
 #main.about ol li {
   display: block;
   border-bottom: 1px solid #cccccc;
-  padding-top: 0.361em;
-  padding-bottom: 0.361em;
+  padding-top: 0.417em;
+  padding-bottom: 0.417em;
 }
-/* line 74, ../sass/partial/_typography.scss */
+/* line 51, ../sass/partial/_typography.scss */
 #main.about ol li strong {
   margin-right: 0.25em;
 }
 @media only screen and (max-width: 520px) {
-  /* line 74, ../sass/partial/_typography.scss */
+  /* line 51, ../sass/partial/_typography.scss */
   #main.about ol li strong {
     display: block;
     clear: both;
@@ -340,92 +296,51 @@ strong {
 /* line 3, ../sass/partial/_application.scss */
 html {
   background: white;
-  min-height: 100%;
   border-top: 0.278em solid #ffdb00;
-  padding: 0.556em 1.111em 1.111em 1.111em;
+  padding: 0.556em;
+  text-align: center;
 }
 
-/* line 9, ../sass/partial/_application.scss */
-body {
-  margin: 0 auto;
-  position: relative;
+/* line 10, ../sass/partial/_application.scss */
+#main {
+  text-align: left;
 }
 
 /* line 14, ../sass/partial/_application.scss */
-#header {
-  text-align: center;
-  margin-bottom: 2.167em;
-}
-/* line 18, ../sass/partial/_application.scss */
 #header ul li {
   display: inline-block;
 }
-/* line 20, ../sass/partial/_application.scss */
+/* line 16, ../sass/partial/_application.scss */
 #header ul li:after {
   content: ' –';
 }
-/* line 23, ../sass/partial/_application.scss */
+/* line 19, ../sass/partial/_application.scss */
 #header ul li:last-child:after {
   content: '';
 }
 
-/* line 29, ../sass/partial/_application.scss */
-#footer {
-  padding-right: 1em;
-  padding-left: 0.5em;
-  display: inline-block;
-  font-size: 0.75em;
-  line-height: 1.926em;
-  margin-top: 1.444em;
-  border-top: 1px solid #c5c2ca;
-  border-left: 3px double #c5c2ca;
+/* line 25, ../sass/partial/_application.scss */
+ul.imagelist, ul.imagelist li {
+  list-style-type: none;
+  padding: 0 !important;
 }
 
-/* line 40, ../sass/partial/_application.scss */
+/* line 31, ../sass/partial/_application.scss */
+#main {
+  max-width: 760px;
+  margin: 0 auto;
+}
+/* line 34, ../sass/partial/_application.scss */
 #main img {
   width: 100%;
 }
-@media only screen and (min-width: 520px) {
-  /* line 42, ../sass/partial/_application.scss */
-  #main img.barcode {
-    float: right;
-    margin-left: 2em;
-    width: 300px;
-    height: 300px;
-  }
-}
 
-/* line 53, ../sass/partial/_application.scss */
-#main ul.imagelist {
-  list-style-type: none;
-  padding: 0;
-}
-/* line 56, ../sass/partial/_application.scss */
-#main ul.imagelist li {
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-  vertical-align: top;
-  max-width: 24.5%;
-  margin-bottom: 1.444em;
-}
-@media only screen and (max-width: 960px) {
-  /* line 56, ../sass/partial/_application.scss */
-  #main ul.imagelist li {
-    max-width: 32.5%;
-  }
-}
-@media only screen and (max-width: 480px) {
-  /* line 56, ../sass/partial/_application.scss */
-  #main ul.imagelist li {
-    max-width: 100%;
-  }
-}
-/* line 69, ../sass/partial/_application.scss */
-#main ul.imagelist li:after {
-  content: '';
-}
-/* line 72, ../sass/partial/_application.scss */
-#main ul.imagelist li a {
-  text-decoration: none;
+/* line 39, ../sass/partial/_application.scss */
+#footer {
+  width: 25%;
+  border-top: 1px dashed #c5c2ca;
+  margin: 0 auto;
+  font-size: 0.75em;
+  line-height: 2.222em;
+  margin-top: 1.667em;
 }

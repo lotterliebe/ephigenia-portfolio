@@ -2,9 +2,12 @@
 <html lang="de">
 <head>
 	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title><?= @$pageTitle ?: '[no title]' ?></title>
 	<base href="<?= $baseUri ?>" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<link rel="shortcut icon" href="<?= $baseUri ?>/favicon.png"/>
+	<link rel="apple-touch-icon" sizes="114x114" href="<?= $baseUri ?>/apple-touch-icon.png"/>
 	<link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400|Oswald" rel="stylesheet" type="text/css">
 	<link href="<?= $baseUri; ?>/css/screen.css" rel="stylesheet" type="text/css" />
 </head>
@@ -26,7 +29,7 @@
 			</article>
 		</div>
 		<footer id="footer">
-			© 2011 Marcel Eichner, <a href="<?= $Router->page(array('path' => 'imprint')); ?>">Impressum</a>
+			© <?= date('Y'); ?> Marcel Eichner, <a href="<?= $Router->page(array('path' => 'imprint')); ?>">Impressum</a>
 		</footer>
 	</div>
 </body>

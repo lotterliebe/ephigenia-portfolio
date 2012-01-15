@@ -6,8 +6,6 @@ class: about
 
 Marcel Eichner wurde 1983 in Berlin geboren. Er lebt in Berlin als Programmierer, Webdesigner, Film-Blogger und Illustrator. Studium des Kommunikationsdesigns an der FHTW Berlin. Selbständiger PHP-Programmierer. Arbeitete für/an verschiedene Web 2.0-Unternehmen und Open Source Projekten.
 
-<img src="http://chart.apis.google.com/chart?cht=qr&amp;chof=gif&amp;chs=400x400&amp;chl=BEGIN%3AVCARD%0AVERSION%3A2.1%0AFN%3AMarcel+Eichner%0AN%3AEichner%3BMarcel%0ATEL%3BCELL%3A015122946946%0AEMAIL%3Alove%40ephigenia.de%0AURL%3BHOME%3Ahttp%3A%2F%2Fwww.ephigenia.de%0AADR%3BHOME%3A%3B%3BWarschauer+Str.+59a%3BBerlin%3B%3B10243%3BDeutschland%0AEND%3AVCARD" class="barcode">
-
 ## Find me somewhere else
 * [XING](https://www.xing.com/profile/Marcel_Eichner/)
 * [Linkedin](http://www.linkedin.com/pub/10/398/b1b)

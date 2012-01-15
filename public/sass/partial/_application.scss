@@ -2,75 +2,44 @@
 
 html {
 	@include background($application-background-color);
-	min-height: 100%;
 	border-top: pxToEm(5px) solid $special-color;
-	padding: pxToEm(10px) pxToEm(20px) pxToEm(20px) pxToEm(20px);
-}
-body {
-	margin: 0 auto;
-	position: relative;
-}
-
-#header {
+	padding: pxToEm(10px);
 	text-align: center;
-	@include trailer(1.5);
-	ul {
-		li {
-			display: inline-block;
-			&:after {
-				content: ' –';
-			}
-			&:last-child:after {
-				content: '';
-			}
-		}
-	}
-}
-#footer {
-	padding-right: 1em;
-	padding-left: 0.5em;
-	display: inline-block;
-	@include adjust-font-size-to($base-font-size * 0.75);
-	@include leader(1);
-	border-top: 1px solid lighten($text-color, 50);
-	border-left: 3px double lighten($text-color, 50);
 }
 
 #main {
-	img {
-		width: 100%;
-		&.barcode {
-			@media only screen and (min-width: 520px) {
-				float: right;
-				margin-left: 2em;
-				width: 300px;
-				height: 300px; 
-			}
-		}
+	text-align: left;
+}
+
+#header ul li {
+	display: inline-block;
+	&:after {
+		content: ' –';
+	}
+	&:last-child:after {
+		content: '';
 	}
 }
 
-#main ul.imagelist {
-	list-style-type: none;
-	padding: 0;
-	li {
-		margin: 0;
-		padding: 0;
-		display: inline-block;
-		vertical-align: top;
-		max-width: 24.5%;
-		@include trailer(1);
-		@media only screen and (max-width: 960px) {
-			max-width: 32.5%;
-		}
-		@media only screen and (max-width: 480px) {
-			max-width: 100%;
-		}
-		&:after {
-			content: '';
-		}
-		a {
-			text-decoration: none;
-		}
+ul.imagelist {
+	&, li {
+		list-style-type: none;
+		padding: 0 !important;
 	}
+}
+
+#main {
+	max-width: 760px;
+	margin: 0 auto;
+	img {
+		width: 100%;
+	}
+}
+
+#footer {
+	width: 25%;
+	border-top: 1px dashed lighten($text-color, 50);
+	margin: 0 auto;
+	@include adjust-font-size-to($base-font-size * 0.75);
+	@include leader(1);
 }
